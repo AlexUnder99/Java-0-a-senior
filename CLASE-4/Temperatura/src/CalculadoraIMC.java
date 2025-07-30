@@ -5,7 +5,7 @@ public class CalculadoraIMC {
     public static void main(String[] args) {
         
 
-        var input = new Scanner(System.in);
+        try (var input = new Scanner(System.in)) {
 
         System.out.println("ingresa tu altura");
         var altura = input.nextDouble();
@@ -21,6 +21,7 @@ public class CalculadoraIMC {
 
 
 
+    }
     }
     
 }
